@@ -17,9 +17,18 @@ public class NormalTweetModel extends LoenelyTweetModel
 	}
 
 	@Override
-	public String determinateTweet()
+	/*public String determinateTweet()
 	{
 		return "[normal]";
+	}*/
+	
+	public void setImportant(boolean important) throws Exception
+	{
+		if (important)
+		{
+			throw new IllegalArgumentException();
+		}
+		this.important = important;
 	}
 
 }

@@ -27,11 +27,21 @@ public class ImportantTweetModel extends LoenelyTweetModel
 		this.text = text;
 	}
 	
-	public String determinateTweet()
+	/*public String determinateTweet()
 	{
 		
 		return "[Important]";
 		
+	}
+	*/
+	
+	public void setImportant(boolean important) throws Exception
+	{
+		if (important)
+		{
+			throw new IllegalArgumentException();
+		}
+		this.important = important;
 	}
 
 }

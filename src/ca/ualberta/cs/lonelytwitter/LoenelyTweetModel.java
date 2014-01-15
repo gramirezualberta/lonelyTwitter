@@ -8,6 +8,7 @@ public abstract class LoenelyTweetModel
 	
 	protected String text;
 	protected Date timestamp;
+	protected boolean important;
 	
 	public LoenelyTweetModel(String text, Date timestamp)
 	{
@@ -48,6 +49,7 @@ public abstract class LoenelyTweetModel
 		this.timestamp = timestamp;
 	}
 	
-	public abstract String determinateTweet();
+	//public abstract String determinateTweet();
+	public abstract void setImportant(boolean important) throws Exception;
 
 }
