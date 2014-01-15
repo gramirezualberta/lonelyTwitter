@@ -50,6 +50,6 @@ public abstract class LoenelyTweetModel
 	}
 	
 	//public abstract String determinateTweet();
-	public abstract void setImportant(boolean important) throws Exception;
+	public abstract void setImporant(boolean important) throws Exception;
 
 }

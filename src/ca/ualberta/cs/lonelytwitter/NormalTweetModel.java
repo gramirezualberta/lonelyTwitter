@@ -22,7 +22,7 @@ public class NormalTweetModel extends LoenelyTweetModel
 		return "[normal]";
 	}*/
 	
-	public void setImportant(boolean important) throws Exception
+	public void setImporant(boolean important) throws Exception
 	{
 		if (important)
 		{

@@ -34,14 +34,18 @@ public class ImportantTweetModel extends LoenelyTweetModel
 		
 	}
 	*/
-	
-	public void setImportant(boolean important) throws Exception
+
+	@Override
+	public void setImporant(boolean important) throws Exception
 	{
+
+		// TODO Auto-generated method stub
 		if (important)
 		{
 			throw new IllegalArgumentException();
 		}
 		this.important = important;
+		
 	}
 
 }
