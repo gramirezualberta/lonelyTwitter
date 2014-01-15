@@ -3,11 +3,11 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 
-public class LoenelyTweetModel
+public abstract class LoenelyTweetModel
 {
 	
-	private String text;
-	private Date timestamp;
+	protected String text;
+	protected Date timestamp;
 	
 	public LoenelyTweetModel(String text, Date timestamp)
 	{
@@ -32,11 +32,7 @@ public class LoenelyTweetModel
 	}
 
 	
-	public void setText(String text)
-	{
-	
-		this.text = text;
-	}
+	public abstract void setText(String text);
 
 	
 	public Date getTimestamp()
@@ -51,5 +47,7 @@ public class LoenelyTweetModel
 	
 		this.timestamp = timestamp;
 	}
+	
+	public abstract String determinateTweet();
 
 }
