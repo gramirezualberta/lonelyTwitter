@@ -23,13 +23,17 @@ public class LonelyTweetModelTest extends ActivityInstrumentationTestCase2<Lonel
 		Date date = new Date(System.currentTimeMillis());
 		LonelyTweetModel a = new ImportantTweetModel("hi",date);
 		LonelyTweetModel b = new ImportantTweetModel("hi",date);
-		assertEquals("it should be true", true, a.equals(b) );
+		LonelyTweetModel f = new ImportantTweetModel("bye",date);
 		LonelyTweetModel c = new NormalTweetModel("hi",date);	
 		LonelyTweetModel d = new NormalTweetModel("hi",date);
 		LonelyTweetModel e = new NormalTweetModel("bye",date);
+		assertEquals("it should be true", true, a.equals(b));
 		assertEquals("it should be true", true, d.equals(c));
 		assertEquals("it should be false", false, a.equals(c));
-		assertEquals("it should be false", true, d.equals(e));
+		assertEquals("it should be false", false, d.equals(e));
+		assertEquals("it should be false", false, a.equals(f));
+		assertEquals("it should be false", false, f.equals(e));
+		
 	}
 
 }
