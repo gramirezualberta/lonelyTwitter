@@ -94,4 +94,9 @@ public class LonelyTwitterActivity extends Activity {
 			e.printStackTrace();
 		}
 	}
+	
+	public ArrayAdapter<NormalTweetModel> getAdapter() {
+		return adapter;
+	}
+	
 }
