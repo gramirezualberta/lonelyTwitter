@@ -4,12 +4,8 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.test.ActivityInstrumentationTestCase2;
-import android.test.ViewAsserts;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.TextView;
-import ca.ualberta.cs.lonelytwitter.IntentReaderActivity;
 import ca.ualberta.cs.lonelytwitter.LonelyTwitterActivity;
 import ca.ualberta.cs.lonelytwitter.NormalTweetModel;
 
@@ -58,7 +54,7 @@ public class LonelyTwitterActivityUITest extends
 		LonelyTwitterActivity activity = getActivity();
 		NormalTweetModel normalTweet = new NormalTweetModel(text);
 		
-		int prevCount = activity.getAdapter().getCount();
+		int prevCount =  activity.getAdapter().getCount();
 		
 		assertNotNull(activity.findViewById(ca.ualberta.cs.lonelytwitter.R.id.save));
 		textInput.setText(text);

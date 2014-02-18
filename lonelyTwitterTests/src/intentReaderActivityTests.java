@@ -1,10 +1,9 @@
-import ca.ualberta.cs.lonelytwitter.IntentReaderActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase2;
-import android.view.View;
-import android.widget.TextView;
 import android.test.ViewAsserts;
+import android.widget.TextView;
+import ca.ualberta.cs.lonelytwitter.IntentReaderActivity;
 
 @SuppressLint("NewApi")
 public class intentReaderActivityTests extends
